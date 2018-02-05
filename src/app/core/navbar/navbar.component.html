@@ -1,0 +1,40 @@
+<nav class="navbar">
+    <div class="container">
+        <div class="ui-g">
+          <div class="ui-g-12">
+             <a href="javascript:;"><span class="fa fa-bars fa-inverse"  (click)="display = true" ></span></a>
+             <span class="lbl-text" id="menu-label" title="MENU">MENU</span>
+          </div>
+        </div>
+    </div>
+
+    <div class="navbar-menu">
+          <p-sidebar [(visible)]="display" position="right" [baseZIndex]="10000">
+              <li class="navbar-usuario">José da Silva</li>
+              <li class="navbar-menuitem"><a href="#">Lançamentos</a></li>
+              <li class="navbar-menuitem"><a href="#">Pessoas</a></li>
+              <li class="navbar-menuitem"><a href="#">Logout</a></li>
+          </p-sidebar>
+    </div>
+
+</nav>
+<!--
+<nav class="navbar">
+
+    <div class="container">
+      <div class="ui-g">
+        <div class="ui-g-12">
+          <a href="javascript:;" class="navbar-toggle" (click)="exibindoMenu = !exibindoMenu"><i class="fa fa-bars"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <ul class="navbar-menu" [hidden]="!exibindoMenu">
+      <li class="navbar-usuario">José da Silva</li>
+      <li class="navbar-menuitem"><a href="#">Lançamentos</a></li>
+      <li class="navbar-menuitem"><a href="#">Pessoas</a></li>
+      <li class="navbar-menuitem"><a href="#">Logout</a></li>
+    </ul>
+
+  </nav>
+-->
